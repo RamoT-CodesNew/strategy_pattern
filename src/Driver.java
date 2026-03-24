@@ -1,8 +1,7 @@
 /**
  * @author Ramo Tucakovic
  * @since 1.6.0
- * Description: Driver class demonstrating the Strategy pattern. Creates a list of
- *              monsters, prints their stats, runs combat rounds, and shows equals/hashCode.
+ * Description: Runs the Strategy pattern demo with monsters, combat, and equals tests.
  */
 import Monsters.Imp;
 import Monsters.Kobold;
@@ -26,18 +25,15 @@ public class Driver {
         Imp namedImp = new Imp("Sneaky Imp", 12, 7);
         monsters.add(namedImp);
 
-        // --- Print all monsters ---
         System.out.println("=== Monsters ===");
         for (Monster m : monsters) {
             System.out.println(m);
         }
 
-        // --- Show attack strategies ---
         System.out.println("\n=== Attack Strategies ===");
         System.out.println(imp.getName() + " uses: " + imp.getAttackStr());
         System.out.println(kobold.getName() + " uses: " + kobold.getAttackStr());
 
-        // --- Combat rounds ---
         System.out.println("\n=== Combat ===");
         imp.attackTarget(kobold);
         System.out.println(kobold);
@@ -48,12 +44,10 @@ public class Driver {
         kobold.attackTarget(imp);
         System.out.println(imp);
 
-        // --- getAttribute demo ---
         System.out.println("\n=== Random Attribute Rolls ===");
         System.out.println("Random roll (1-3): " + imp.getAttribute(1, 3));
         System.out.println("Random roll (1-6): " + kobold.getAttribute(1, 6));
 
-        // --- equals test ---
         System.out.println("\n=== Equals Test ===");
         Imp imp2 = new Imp();
         System.out.println("imp.equals(imp): " + imp.equals(imp));

@@ -1,9 +1,7 @@
 /**
  * @author Ramo Tucakovic
  * @since 1.6.0
- * Description: Abstract base class for all monsters. Holds core stats (hp, maxHP, xp,
- *              strength, defense, agility), a HashMap of items, and an Attack strategy.
- *              Implements the Strategy pattern via the Attack field.
+ * Description: Abstract monster class. Holds stats, items, and an Attack strategy.
  */
 package Monsters;
 
@@ -37,10 +35,12 @@ public abstract class Monster {
         this.items = new HashMap<>();
     }
 
+    // RT: returns random int between min and max inclusive
     public Integer getAttribute(Integer min, Integer max) {
         return rand.nextInt((max - min) + 1) + min;
     }
 
+    // RT: subtracts damage from hp, returns false if perished
     public boolean takeDamage(Integer damage) {
         if (damage > 0) {
             hp -= damage;
@@ -63,8 +63,6 @@ public abstract class Monster {
     public String getAttackStr() {
         return attack.getStr();
     }
-
-    // --- Getters ---
 
     public String getName() {
         return name;
@@ -97,8 +95,6 @@ public abstract class Monster {
     public HashMap<String, Integer> getItems() {
         return items;
     }
-
-    // --- Setters ---
 
     public void setName(String name) {
         this.name = name;

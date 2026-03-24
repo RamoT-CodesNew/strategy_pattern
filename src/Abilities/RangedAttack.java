@@ -1,8 +1,7 @@
 /**
  * @author Ramo Tucakovic
  * @since 1.6.0
- * Description: Concrete ranged attack strategy. Performs a long-range shot
- *              dealing 1-4 damage. Implements the Attack interface.
+ * Description: Long-range attack, deals 1-4 damage.
  */
 package Abilities;
 

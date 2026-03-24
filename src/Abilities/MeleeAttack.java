@@ -1,8 +1,7 @@
 /**
  * @author Ramo Tucakovic
  * @since 1.6.0
- * Description: Concrete melee attack strategy. Performs a close-range slash
- *              dealing 1-6 damage. Implements the Attack interface.
+ * Description: Close-range attack, deals 1-6 damage.
  */
 package Abilities;
 

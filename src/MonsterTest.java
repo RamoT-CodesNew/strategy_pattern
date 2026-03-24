@@ -1,8 +1,7 @@
 /**
  * @author Ramo Tucakovic
  * @since 1.6.0
- * Description: Unit tests for Monster subclasses (Imp and Kobold). Tests cover
- *              default names, HP tracking, takeDamage(), getAttribute(), and equals().
+ * Description: Unit tests for Imp and Kobold covering names, HP, damage, and equals.
  */
 import Monsters.Imp;
 import Monsters.Kobold;

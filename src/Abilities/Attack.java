@@ -1,9 +1,7 @@
 /**
  * @author Ramo Tucakovic
  * @since 1.6.0
- * Description: Interface defining the attack strategy. Extends Ability and
- *              declares the attack behavior used by monsters in the Strategy pattern.
- *              attack() returns the damage dealt; getStr() returns the attack type name.
+ * Description: Attack strategy interface. Returns damage dealt and attack name.
  */
 package Abilities;
 
