@@ -1,5 +1,5 @@
 /**
- * @author Ramo Tucakovic
+ * @author Ramo T
  * @since 1.6.0
  * Description: Unit tests for Imp and Kobold covering names, HP, damage, and equals.
  */
@@ -23,6 +23,8 @@ public class MonsterTest {
         System.out.println("All MonsterTest tests passed!");
     }
 
+    // --- Name Tests ---
+
     static void testImpDefaultName() {
         Imp imp = new Imp();
         assert imp.getName().equals("Imp") : "testImpDefaultName failed";
@@ -35,6 +37,8 @@ public class MonsterTest {
         System.out.println("testKoboldDefaultName passed");
     }
 
+    // --- HP Tests ---
+
     static void testImpDefaultHp() {
         Imp imp = new Imp();
         assert imp.getHp().equals(10) : "testImpDefaultHp failed";
@@ -46,6 +50,8 @@ public class MonsterTest {
         assert k.getHp().equals(15) : "testKoboldDefaultHp failed";
         System.out.println("testKoboldDefaultHp passed");
     }
+
+    // --- Damage Tests ---
 
     static void testTakeDamageReturnsTrueWhenAlive() {
         Imp imp = new Imp();
@@ -68,6 +74,8 @@ public class MonsterTest {
         System.out.println("testHpFloorAtZero passed");
     }
 
+    // --- Attribute Tests ---
+
     static void testGetAttributeInRange() {
         Imp imp = new Imp();
         for (int i = 0; i < 50; i++) {
@@ -76,6 +84,8 @@ public class MonsterTest {
         }
         System.out.println("testGetAttributeInRange passed");
     }
+
+    // --- Equals Tests ---
 
     static void testEqualsWithSelf() {
         Imp imp = new Imp();

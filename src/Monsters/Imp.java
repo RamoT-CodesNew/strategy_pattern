@@ -1,5 +1,5 @@
 /**
- * @author Ramo Tucakovic
+ * @author Ramo T
  * @since 1.6.0
  * Description: Small melee monster with randomized stats. Extends Monster.
  */
@@ -16,7 +16,6 @@ public class Imp extends Monster {
         this.agility = getAttribute(3, 6);
         this.attack = new MeleeAttack();
     }
-
     public Imp(String name, Integer hp, Integer xp) {
         super(name, hp, xp);
         this.strength = getAttribute(1, 5);

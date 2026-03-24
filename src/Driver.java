@@ -1,5 +1,5 @@
 /**
- * @author Ramo Tucakovic
+ * @author Ramo T
  * @since 1.6.0
  * Description: Runs the Strategy pattern demo with monsters, combat, and equals tests.
  */

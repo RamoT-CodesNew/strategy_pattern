@@ -1,5 +1,5 @@
 /**
- * @author Ramo Tucakovic
+ * @author Ramo T
  * @since 1.6.0
  * Description: Ranged monster with moderate HP and randomized stats. Extends Monster.
  */
@@ -16,7 +16,6 @@ public class Kobold extends Monster {
         this.agility = getAttribute(2, 4);
         this.attack = new RangedAttack();
     }
-
     public Kobold(String name, Integer hp, Integer xp) {
         super(name, hp, xp);
         this.strength = getAttribute(3, 6);
