@@ -1,5 +1,5 @@
 /**
- * @author Ramo Tucakovic
+ * @author Ramo T
  * @since 1.6.0
  * Description: Driver class demonstrating the Strategy pattern. Creates a list of
  *              monsters, prints their stats, runs combat rounds, and shows equals/hashCode.

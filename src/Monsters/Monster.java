@@ -1,5 +1,5 @@
 /**
- * @author Ramo Tucakovic
+ * @author Ramo T
  * @since 1.6.0
  * Description: Abstract base class for all monsters. Holds core stats (hp, maxHP, xp,
  *              strength, defense, agility), a HashMap of items, and an Attack strategy.
@@ -24,7 +24,7 @@ public abstract class Monster {
     Attack attack;
     private HashMap<String, Integer> items;
 
-    private static final Random rand = new Random();
+    Random rand = new Random();
 
     public Monster(String name, Integer hp, Integer xp) {
         this.name = name;
@@ -128,7 +128,7 @@ public abstract class Monster {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Monster)) return false;
         Monster m = (Monster) o;
         return Objects.equals(name, m.name) &&
                Objects.equals(hp, m.hp) &&
