@@ -1,5 +1,5 @@
 /**
- * @author Ramo Tucakovic
+ * @author Ramo T
  * @since 1.6.0
  * Description: A cunning ranged monster. The Kobold has moderate HP and uses
  *              randomized stats via getAttribute(). Extends Monster.
