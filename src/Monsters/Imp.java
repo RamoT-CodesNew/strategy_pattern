@@ -1,5 +1,5 @@
 /**
- * @author Ramo Tucakovic
+ * @author Ramo T
  * @since 1.6.0
  * Description: A small, goofy melee monster. The Imp has low HP and uses
  *              randomized stats via getAttribute(). Extends Monster.

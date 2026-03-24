@@ -1,5 +1,5 @@
 /**
- * @author Ramo Tucakovic
+ * @author Ramo T
  * @since 1.6.0
  * Description: Interface defining the attack strategy. Extends Ability and
  *              declares the attack behavior used by monsters in the Strategy pattern.
