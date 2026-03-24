@@ -1,5 +1,5 @@
 /**
- * @author Ramo Tucakovic
+ * @author Ramo T
  * @since 1.6.0
  * Description: Unit tests for Monster subclasses (Imp and Kobold). Tests cover
  *              default names, HP tracking, takeDamage(), getAttribute(), and equals().
