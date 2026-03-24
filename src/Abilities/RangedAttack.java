@@ -1,5 +1,5 @@
 /**
- * @author Ramo Tucakovic
+ * @author Ramo T
  * @since 1.6.0
  * Description: Concrete ranged attack strategy. Performs a long-range shot
  *              dealing 1-4 damage. Implements the Attack interface.
@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class RangedAttack implements Attack {
 
-    private static final Random rand = new Random();
+    Random rand = new Random();
 
     @Override
     public Integer attack(Monster target) {
